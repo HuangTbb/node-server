@@ -1,9 +1,12 @@
 {
-  "name": "node-serve",
-  "version": "1.0.0",
-  "main": "index.js",
+  "name": "node-serve-you",
+  "version": "0.0.1",
+  "main": "index.html",
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^16.11.10"
+  },
+  "dependencies": {
+    "commander": "^8.3.0"
   }
 }

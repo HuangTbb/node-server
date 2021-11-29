@@ -6,7 +6,8 @@ import * as url from 'url';
 
 const server = http.createServer();
 const publicDir = p.resolve(__dirname, 'public');
-let cacheAge = 3600*24*365;
+const cacheAge = 3600*24*365;
+
 server.on('request', (request: IncomingMessage, response: ServerResponse) => {
   const {method, url: path, headers} = request;
   const {pathname, search} = url.parse(path);
